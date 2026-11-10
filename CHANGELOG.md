@@ -1,5 +1,10 @@
 # Changelog
 
+## Initial GitHub publication — 2026-11-10
+- Connected public https://github.com/jlemay90/patternsight, published source
+  history and original/stable tags, and prepared main as the tested initial baseline.
+- Updated receiving prompts and repository status; no application code changed.
+
 ## GitHub handoff preparation — 2026-11-10
 - Added REPOSITORY.md and GitHub-first receiving/publishing requirements.
 - Recorded the blocked repository-creation operation and missing Claude source.

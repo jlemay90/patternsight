@@ -3,9 +3,11 @@
 ## GitHub preparation documentation update
 Application source remains unchanged. Continuity document checks and whitespace
 validation are rerun for the GitHub-first handoff update; no new provider or UI
-verification is claimed. Repository creation failed with GitHub's
-`Resource not accessible by integration (createRepository)` response. No push
-or remote verification occurred. Claude's referenced commits remain unverified.
+verification is claimed. Owner subsequently created the public repository, which
+was verified empty before Git push. Historical branches and baseline tags were
+pushed. Repository settings remain integration-limited. Final Git ref equality
+and fresh-clone checks are verified by the publishing agent after pushing this
+documentation. Claude's referenced commits remain unverified.
 
 Tested source: b1fdcaaab5b37541632f633abc1300f0c8ce452a. A subsequent docs-only
 commit records results; source code is unchanged. Final export metadata records

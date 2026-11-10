@@ -1,6 +1,6 @@
 # PatternSight: start here
 
-GitHub-first continuation: read REPOSITORY.md for the intended canonical remote,
+GitHub-first continuation: read REPOSITORY.md for the canonical public remote,
 publication status, receiving branch policy, and missing Claude source. Fetch
 remote changes before starting; verify publication rather than assuming it.
 

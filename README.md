@@ -65,11 +65,17 @@ With system Chromium, set `CHROMIUM_EXECUTABLE=/usr/bin/chromium` for either tes
 
 ## Continue with another agent
 
-GitHub is the intended shared home: https://github.com/jlemay90/patternsight.
-**Publication is pending:** the integration could not create the repository.
-Read REPOSITORY.md for the exact status, publication procedure and required
-fetch/push verification. Claude's newer handoff has been recorded, but its
-actual source package is still missing. Archive transfer remains the fallback.
+GitHub is the shared home: https://github.com/jlemay90/patternsight.
+Clone the repository and start from the latest `origin/main`. Read REPOSITORY.md
+for the receiving procedure and required fetch/push verification. Claude's newer
+handoff has been recorded, but its actual source package is still missing.
+Archive transfer remains the offline fallback.
+
+```sh
+git clone https://github.com/jlemay90/patternsight.git
+cd patternsight
+python server.py
+```
 
 Read AGENTS.md and AGENT-HANDOFF.md. Copy NEXT-AGENT-PROMPT.txt (also in the
 Project continuity panel) and attach the complete source export. A reusable
@@ -89,4 +95,5 @@ extract the zip, then `git clone patternsight.bundle restored-project`.
 Reference policy: `original` is the initial documentation baseline (not an
 earlier app); `stable/foundation-v0.1.0` identifies the verified foundation once
 tagged. No previous working app existed. CURRENT is actual HEAD plus dirty state.
-The foundation stays on `agent/01-foundation`; no experimental merge into main.
+The initial public main baseline contains the verified foundation. Session
+branches preserve earlier handoffs; future experimental changes require review.

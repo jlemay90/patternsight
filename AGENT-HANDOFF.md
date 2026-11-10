@@ -1,15 +1,18 @@
-# Agent handoff — GitHub preparation / foundation v0.1.0
+# Agent handoff — GitHub publication / foundation v0.1.0
 
-Current documentation branch: agent/03-github-handoff. Application source is
-unchanged from the tested agent-01 foundation below. REPOSITORY.md records the
-intended public URL, failed createRepository operation, and unreceived Claude
-source. No GitHub repository, remote synchronization, or agent-02 import is
-claimed. The current documentation commit is resolved by Git/export manifest.
-Next step: owner creates empty public jlemay90/patternsight, then publish/verify
-this history without overwriting remote work. Recover Claude's actual package.
+Canonical repository: https://github.com/jlemay90/patternsight
+Receiving branch: main (initial public baseline).
+Publication work branch: agent/03-github-handoff.
+Application source is unchanged from the tested agent-01 foundation below.
+Source branches and historical tags have been pushed; exact final handoff commit
+is resolved using Git / EXPORT-MANIFEST.json to avoid a self-referential hash.
+Compare `git rev-parse HEAD` with `git ls-remote origin refs/heads/main` before
+continuing; publication verification is recorded in the publishing agent's result.
+No agent-02 import is claimed. Recover Claude's actual package before continuing
+its evaluator or eight-fixture work. REPOSITORY.md records the remaining gap.
 
 Date: 2026-11-10. Builder: ChatGPT / Codex.
-Branch: agent/01-foundation.
+Historical foundation branch: agent/01-foundation.
 Tested source revision: b1fdcaaab5b37541632f633abc1300f0c8ce452a.
 The following documentation-only commit records verification. Resolve its exact
 HEAD using Git or EXPORT-MANIFEST.json; code is unchanged from the tested source.
@@ -17,7 +20,8 @@ Original baseline: tag original, documentation-only commit 9762397.
 Previous stable app: none existed. CURRENT: inspect actual HEAD and dirty state.
 Stable foundation reference: stable/foundation-v0.1.0 (handoff-complete revision).
 Working tree at handoff: clean; ignored artifacts are generated exports/screenshots.
-No main merge performed. main retains the documentation-only original baseline.
+Initial public main publication fast-forwards the docs-only original baseline to
+the tested foundation and current continuity docs; original/stable tags remain.
 
 ## Preserved goal
 Build PatternSight, an evidence-grounded reflective journal, and make continuing
@@ -28,7 +32,7 @@ Read PROJECT-OVERVIEW.md for product contracts and AGENTS.md for receiving rules
 Created local persistent journal UI, mood tags/history, export/delete, versioned
 Gemini system instruction and schemas, provenance validation, insight corrections,
 reflection questions, continuity panel, reusable bundled skill and export tooling.
-No pre-existing app was overwritten; main remains the original docs baseline.
+No pre-existing app was overwritten; the original docs baseline remains tagged.
 
 ## Setup and checks
 Python 3.12+, `python server.py`. Optional .env for Gemini, never committed.
@@ -45,9 +49,9 @@ archive extraction, SHA-256 checksums, full Git bundle restore, and rerun of all
 No API key in this environment: live provider behavior remains unverified.
 User's separately created continuity skill was not visible; bundled skill is a
 new implementation based on the shared protocol, not a verified installed copy.
-No GitHub remote synchronization, cloud deployment, or global skill installation.
-GitHub creation was attempted and rejected by integration permissions; see
-REPOSITORY.md for the actionable publishing and continuation procedure.
+GitHub is connected and source branches/tags published. No cloud deployment or
+global skill installation. Creation/default-branch settings were denied by the
+integration; the owner created the repo and main is used as the public baseline.
 Read KNOWN-ISSUES.md; do not label this an authenticated production service.
 
 ## Next task and acceptance

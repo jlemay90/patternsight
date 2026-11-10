@@ -1,25 +1,23 @@
 # Shared repository and synchronization
 
-Intended public repository: https://github.com/jlemay90/patternsight
-Status: **NOT CREATED OR PUBLISHED by this session**.
-GitHub rejected `gh repo create jlemay90/patternsight --public` with
-`Resource not accessible by integration (createRepository)` on 2026-11-10.
-The connected CLI authenticates as jlemay90, but lacks repository-creation
-permission. The owner must create the empty public repository first. Do not
-interpret the intended URL as a verified existing repository.
+Canonical public repository: https://github.com/jlemay90/patternsight
+Clone URL: https://github.com/jlemay90/patternsight.git
+Integration branch / default branch: `main`.
+Status: owner created the empty public repository; source branches and original /
+stable tags were published on 2026-11-10. The tested foundation is the initial
+public main baseline; later experimental changes must use separate branches.
 
-Create it as public with no README, license or .gitignore initialization:
-https://github.com/new?name=patternsight&visibility=public
+## Initial publication
 
-## Initial publication after creation
-
-Inspect the remote before pushing; never overwrite a repository that already
-contains independent work. This checkout has not configured origin, pushed any
-commits, or synchronized with GitHub yet. Publish the tested foundation history,
-the current documentation branch, and original/stable tags. Keep main unchanged
-unless the owner authorizes promotion of the foundation. Set the repository's
-default branch to the branch containing the app rather than the docs-only main.
-Verify remote commit IDs after every push and record them in AGENT-HANDOFF.md.
+The remote was verified empty before any push. Origin points to the clone URL
+above. Branches agent/01-foundation and agent/03-github-handoff preserve session
+work; tags original and stable/foundation-v0.1.0 preserve the historical baselines.
+Initial main publication fast-forwards the existing docs-only baseline to the
+verified foundation and continuity documents; no history is rewritten.
+Repository creation and default-branch setting were denied by integration
+permissions, but publishing Git refs succeeded. The owner created the repo and
+its existing default is main. Resolve latest exact commit through Git; verify
+remote IDs rather than relying on a handoff's branch label alone.
 
 ## Every incoming agent
 

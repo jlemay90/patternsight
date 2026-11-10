@@ -1,8 +1,8 @@
-Continue PatternSight using the shared repository when published:
+Continue PatternSight using the shared public repository:
 https://github.com/jlemay90/patternsight
-Read REPOSITORY.md first: creation/publication was blocked by the integration's
-permissions, so this URL is currently intended, not verified. Until published,
-use the attached complete project and Git bundle as the fallback.
+Clone/fetch it and begin from the latest origin/main. Read REPOSITORY.md first.
+Source, history and baseline tags are published; use an exported project and
+Git bundle only as an offline fallback.
 You are the next agent in an ongoing chain; preserve continuity for every agent.
 
 First read AGENTS.md, README.md, PROJECT-OVERVIEW.md, ARCHITECTURE.md,
@@ -12,7 +12,7 @@ the export, read EXPORT-MANIFEST.json; restore the bundled Git repository when
 you need history. Do not assume chat context, keys, global skills, or previous
 agents' tools are available.
 
-Once the repo exists, fetch remote branches/tags before changes and work from
+Fetch remote branches/tags before changes and work from
 the latest intended source. Claude's agent/02-live-eval-prep handoff references
 b346504 and e0a0315 plus an evaluator and eight fixtures, but those actual files
 have not been received here. Import that package before claiming to continue

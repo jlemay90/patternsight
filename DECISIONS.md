@@ -1,5 +1,15 @@
 # Decisions
 
+## 2026-11-10 — Initial public repository publication
+- Owner created jlemay90/patternsight and supplied its clone URL. Confirmed public
+  access and an empty remote before publishing branches and baseline tags.
+- Git push works; changing repository default-branch settings returned HTTP 403.
+  Publish the tested foundation as the initial public main baseline via a
+  fast-forward, preserving original history and tags. This fulfills the owner's
+  repository/publication request without merging new experimental application code.
+- Keep agent session branches and GitHub-first handoff instructions. Claude's
+  newer work remains a documented source-recovery gap, not a claimed import.
+
 ## 2026-11-10 — GitHub continuity preparation
 - Owner requested a separate public patternsight repository. GitHub CLI access
   was authenticated as jlemay90, but creation failed with an integration permission
