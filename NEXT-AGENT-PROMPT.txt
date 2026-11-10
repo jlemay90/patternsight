@@ -1,0 +1,41 @@
+Continue PatternSight from the attached complete project. You are the next agent
+in an ongoing chain; preserve continuity for every agent after you.
+
+First read AGENTS.md, README.md, PROJECT-OVERVIEW.md, ARCHITECTURE.md,
+DECISIONS.md, KNOWN-ISSUES.md, TEST-REPORT.md, AGENT-HANDOFF.md, and
+skills/app-continuity/SKILL.md. Inspect the source and actual Git state. If using
+the export, read EXPORT-MANIFEST.json; restore the bundled Git repository when
+you need history. Do not assume chat context, keys, global skills, or previous
+agents' tools are available.
+
+Before changes, report briefly: the goal, preserved functionality, actual
+HEAD/branch/dirty state, tested revision, and any mismatch with the handoff.
+Preserve user work, run baseline checks, and create your own branch for
+substantial work. Do not rebuild or change stacks just for preference.
+
+Product: a reflective journal with quick entries, self-reported mood, careful
+historical hypotheses, evidence-linked insight cards, corrections, and grounded
+questions. Up to three insights, including zero when evidence is sparse. Treat
+causal and emotional interpretations as hypotheses. Helpful patterns matter too.
+Keep the API key server-side. Never include real journal content in code exports.
+
+First next task: configure Gemini privately through this environment's secret
+settings or local .env, verify a currently supported model, and run synthetic
+cases in fixtures/reflection-cases.json. Check schema compatibility, valid exact
+citations, sparse-history behavior, counterexamples, prompt injection resistance,
+and respect for rejected interpretations. Do not claim live verification until
+the requests actually succeed. If no key is available, proceed with independent
+quality work and state the provider-test blocker. Do not ask for a key in chat.
+
+Run python -m unittest discover -s tests -v, node --check static/app.js, and
+python scripts/check_handoff.py. Use a disposable database for browser testing.
+Explain major redesigns first. Do not merge experimental work into main without
+the owner's approval. Preserve original and stable tags; never fabricate a
+previous working version.
+
+Before handing off: update relevant permanent documents, record actual tests and
+untested features, source commit, branch, dirty state, stable reference, blockers,
+next task and acceptance criteria. Commit authorized work and export the complete
+tracked source and Git bundle with python scripts/export_handoff.py. Keep secrets,
+local journals and generated personal exports out. Give the owner a fresh copyable
+handoff prompt and a package that the following agent can actually continue.
