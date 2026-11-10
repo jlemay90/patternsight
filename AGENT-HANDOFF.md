@@ -1,10 +1,15 @@
 # Agent handoff — 01 / foundation v0.1.0
 
 Date: 2026-11-10. Builder: ChatGPT / Codex.
-Branch: agent/01-foundation. Source revision: pending final verification commit.
+Branch: agent/01-foundation.
+Tested source revision: b1fdcaaab5b37541632f633abc1300f0c8ce452a.
+The following documentation-only commit records verification. Resolve its exact
+HEAD using Git or EXPORT-MANIFEST.json; code is unchanged from the tested source.
 Original baseline: tag original, documentation-only commit 9762397.
 Previous stable app: none existed. CURRENT: inspect actual HEAD and dirty state.
-Stable foundation reference: to be tagged after verification.
+Stable foundation reference: stable/foundation-v0.1.0 (handoff-complete revision).
+Working tree at handoff: clean; ignored artifacts are generated exports/screenshots.
+No main merge performed. main retains the documentation-only original baseline.
 
 ## Preserved goal
 Build PatternSight, an evidence-grounded reflective journal, and make continuing
@@ -23,6 +28,10 @@ Python 3.12+, `python server.py`. Optional .env for Gemini, never committed.
 `python scripts/check_handoff.py`. See TEST-REPORT.md for actual execution.
 The local journal needs no runtime packages. Browser tests need Playwright and
 Chromium, a disposable database, and local socket/process permission.
+Verified: 11 automated API/contract tests; desktop/mobile browser journal flows;
+mocked-provider insight/correction/chat flow; JS syntax; continuity checks; fresh
+archive extraction, SHA-256 checksums, full Git bundle restore, and rerun of all
+11 tests from the restored source. No live Google call or clinical validation.
 
 ## Blockers and limitations
 No API key in this environment: live provider behavior remains unverified.

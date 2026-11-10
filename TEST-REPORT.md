@@ -1,6 +1,8 @@
 # Verification — foundation v0.1.0
 
-Source revision will be pinned in AGENT-HANDOFF.md after final verification.
+Tested source: b1fdcaaab5b37541632f633abc1300f0c8ce452a. A subsequent docs-only
+commit records results; source code is unchanged. Final export metadata records
+the handoff-complete HEAD and stable tag.
 
 ## Completed
 - `python -m unittest discover -s tests -v`: 11 tests passed. API/storage checks
@@ -26,7 +28,12 @@ Source revision will be pinned in AGENT-HANDOFF.md after final verification.
   chat, evidence-linked answer, and reload persistence all passed.
 - `python scripts/check_handoff.py`: passed; required permanent docs and private
   tracked-path exclusion checked. `git diff --check`: passed.
-- Extracted source/Git package verification pending final export.
+- `python scripts/export_handoff.py`: passed. Exported 26 tracked source files,
+  manifest with SHA-256 checksums, and complete Git history bundle. Fresh archive
+  extraction verified all checksums and absence of .env/data. `git bundle verify`
+  passed; cloning restored exact revision and original history. All 11 tests,
+  JS syntax and continuity checks passed again from the restored project.
+  Documentation-only finalization is included in the final regenerated archive.
 
 ## Environment notes
 Default command sandbox prohibited loopback sockets. API tests were rerun with
