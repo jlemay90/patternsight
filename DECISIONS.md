@@ -1,5 +1,15 @@
 # Decisions
 
+## 2026-11-10 — GitHub continuity preparation
+- Owner requested a separate public patternsight repository. GitHub CLI access
+  was authenticated as jlemay90, but creation failed with an integration permission
+  error. No repository creation, remote setup, or push is claimed.
+- Make GitHub fetch/push plus exact remote revision verification part of every
+  agent handoff. Archive/bundle is the offline fallback, not the preferred shared
+  source after publication. No application code changed.
+- Preserve Claude's supplied revision claims without inventing its unavailable
+  source. REPOSITORY.md records the missing package and recovery requirements.
+
 ## 2026-11-10 — agent 01
 - Chose HTML/CSS/JavaScript and Python stdlib + SQLite for immediate local use
   without package installation. User allowed HTML or Python alternatives. React

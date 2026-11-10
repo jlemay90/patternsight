@@ -10,6 +10,9 @@ user's shared protocol. It is not a verified copy of their separately created
 skill and is not automatically installed in other assistants.
 
 ## Receive
+0. Prefer the canonical GitHub repository when configured. Read REPOSITORY.md,
+   inspect remotes, fetch current branches/tags, and verify the intended source
+   revision before continuing. Record unavailable or failed remote access.
 1. Read AGENTS.md and the permanent project documents. Inspect source and Git.
 2. State the user goal, current behavior, non-negotiable contracts, last tested
    revision, actual HEAD/branch/dirty state, and discrepancies you discover.
@@ -28,6 +31,10 @@ Track prompt/schema versions and synthetic regression cases for AI behavior.
 Do not merge experimental branches into stable main without user approval.
 
 ## Verify and hand off
+Commit and push the work branch when authorized and access permits. Verify that
+the remote points to the exact local commit. Include repository, branch and commit
+URLs in the handoff. Public read access does not imply write permission. Never
+claim an uncreated repository exists or local changes are remotely published.
 Run checks appropriate to changed behavior. Report commands and actual results,
 including provider calls that were not made. Update PROJECT-OVERVIEW.md,
 ARCHITECTURE.md, CHANGELOG.md, DECISIONS.md, KNOWN-ISSUES.md, TEST-REPORT.md,

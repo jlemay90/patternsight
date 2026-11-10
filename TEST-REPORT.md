@@ -1,5 +1,12 @@
 # Verification — foundation v0.1.0
 
+## GitHub preparation documentation update
+Application source remains unchanged. Continuity document checks and whitespace
+validation are rerun for the GitHub-first handoff update; no new provider or UI
+verification is claimed. Repository creation failed with GitHub's
+`Resource not accessible by integration (createRepository)` response. No push
+or remote verification occurred. Claude's referenced commits remain unverified.
+
 Tested source: b1fdcaaab5b37541632f633abc1300f0c8ce452a. A subsequent docs-only
 commit records results; source code is unchanged. Final export metadata records
 the handoff-complete HEAD and stable tag.

@@ -6,7 +6,7 @@ root = Path(__file__).resolve().parents[1]
 required = ['AGENTS.md', 'README.md', 'PROJECT-OVERVIEW.md', 'ARCHITECTURE.md',
             'CHANGELOG.md', 'DECISIONS.md', 'KNOWN-ISSUES.md', 'TEST-REPORT.md',
             'AGENT-HANDOFF.md', 'NEXT-AGENT-PROMPT.txt', 'skills/app-continuity/SKILL.md',
-            '.env.example', 'requirements.txt', 'prompts/reflect-v1.txt']
+            '.env.example', 'requirements.txt', 'prompts/reflect-v1.txt', 'REPOSITORY.md']
 missing = [p for p in required if not (root / p).is_file() or not (root / p).read_text().strip()]
 assert not missing, f'Missing handoff files: {missing}'
 tracked = subprocess.check_output(['git', 'ls-files'], cwd=root, text=True).splitlines()

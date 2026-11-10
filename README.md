@@ -65,6 +65,12 @@ With system Chromium, set `CHROMIUM_EXECUTABLE=/usr/bin/chromium` for either tes
 
 ## Continue with another agent
 
+GitHub is the intended shared home: https://github.com/jlemay90/patternsight.
+**Publication is pending:** the integration could not create the repository.
+Read REPOSITORY.md for the exact status, publication procedure and required
+fetch/push verification. Claude's newer handoff has been recorded, but its
+actual source package is still missing. Archive transfer remains the fallback.
+
 Read AGENTS.md and AGENT-HANDOFF.md. Copy NEXT-AGENT-PROMPT.txt (also in the
 Project continuity panel) and attach the complete source export. A reusable
 skill is bundled at `skills/app-continuity/SKILL.md`; it is not globally installed.

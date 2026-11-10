@@ -1,5 +1,9 @@
 # PatternSight: start here
 
+GitHub-first continuation: read REPOSITORY.md for the intended canonical remote,
+publication status, receiving branch policy, and missing Claude source. Fetch
+remote changes before starting; verify publication rather than assuming it.
+
 Read README.md, PROJECT-OVERVIEW.md, ARCHITECTURE.md, DECISIONS.md,
 KNOWN-ISSUES.md, TEST-REPORT.md, AGENT-HANDOFF.md and
 skills/app-continuity/SKILL.md before modifying this project.

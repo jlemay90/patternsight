@@ -1,5 +1,9 @@
-Continue PatternSight from the attached complete project. You are the next agent
-in an ongoing chain; preserve continuity for every agent after you.
+Continue PatternSight using the shared repository when published:
+https://github.com/jlemay90/patternsight
+Read REPOSITORY.md first: creation/publication was blocked by the integration's
+permissions, so this URL is currently intended, not verified. Until published,
+use the attached complete project and Git bundle as the fallback.
+You are the next agent in an ongoing chain; preserve continuity for every agent.
 
 First read AGENTS.md, README.md, PROJECT-OVERVIEW.md, ARCHITECTURE.md,
 DECISIONS.md, KNOWN-ISSUES.md, TEST-REPORT.md, AGENT-HANDOFF.md, and
@@ -7,6 +11,12 @@ skills/app-continuity/SKILL.md. Inspect the source and actual Git state. If usin
 the export, read EXPORT-MANIFEST.json; restore the bundled Git repository when
 you need history. Do not assume chat context, keys, global skills, or previous
 agents' tools are available.
+
+Once the repo exists, fetch remote branches/tags before changes and work from
+the latest intended source. Claude's agent/02-live-eval-prep handoff references
+b346504 and e0a0315 plus an evaluator and eight fixtures, but those actual files
+have not been received here. Import that package before claiming to continue
+Claude's code. Do not reconstruct its source from the handoff text.
 
 Before changes, report briefly: the goal, preserved functionality, actual
 HEAD/branch/dirty state, tested revision, and any mismatch with the handoff.
@@ -39,3 +49,6 @@ next task and acceptance criteria. Commit authorized work and export the complet
 tracked source and Git bundle with python scripts/export_handoff.py. Keep secrets,
 local journals and generated personal exports out. Give the owner a fresh copyable
 handoff prompt and a package that the following agent can actually continue.
+When GitHub access exists, push your branch and verify its remote commit ID.
+Include repository, branch and exact commit URLs in your handoff. If blocked,
+state what remains local; public access alone does not provide push credentials.

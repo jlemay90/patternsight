@@ -22,3 +22,7 @@
    securely erase database pages, existing exports, backups or provider records.
 8. **Device coverage** — automated desktop/mobile Chromium coverage is not a
    test on a physical Android device, Safari, or every assistive technology.
+9. **GitHub publication blocked** — intended jlemay90/patternsight creation was
+   rejected by the integration's createRepository permission. No remote or push
+   configured yet. See REPOSITORY.md. Claude's referenced newer commits and
+   evaluator also remain unavailable until its actual source package is received.

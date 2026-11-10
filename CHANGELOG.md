@@ -1,5 +1,10 @@
 # Changelog
 
+## GitHub handoff preparation — 2026-11-10
+- Added REPOSITORY.md and GitHub-first receiving/publishing requirements.
+- Recorded the blocked repository-creation operation and missing Claude source.
+- Updated continuity instructions without changing application code or stable tags.
+
 ## 0.1.0 — 2026-11-10 — Foundation / agent 01
 - Preserved initial requirements and multi-agent protocol as the original Git
   baseline; built on a separate branch.

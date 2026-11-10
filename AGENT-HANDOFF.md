@@ -1,4 +1,12 @@
-# Agent handoff — 01 / foundation v0.1.0
+# Agent handoff — GitHub preparation / foundation v0.1.0
+
+Current documentation branch: agent/03-github-handoff. Application source is
+unchanged from the tested agent-01 foundation below. REPOSITORY.md records the
+intended public URL, failed createRepository operation, and unreceived Claude
+source. No GitHub repository, remote synchronization, or agent-02 import is
+claimed. The current documentation commit is resolved by Git/export manifest.
+Next step: owner creates empty public jlemay90/patternsight, then publish/verify
+this history without overwriting remote work. Recover Claude's actual package.
 
 Date: 2026-11-10. Builder: ChatGPT / Codex.
 Branch: agent/01-foundation.
@@ -38,6 +46,8 @@ No API key in this environment: live provider behavior remains unverified.
 User's separately created continuity skill was not visible; bundled skill is a
 new implementation based on the shared protocol, not a verified installed copy.
 No GitHub remote synchronization, cloud deployment, or global skill installation.
+GitHub creation was attempted and rejected by integration permissions; see
+REPOSITORY.md for the actionable publishing and continuation procedure.
 Read KNOWN-ISSUES.md; do not label this an authenticated production service.
 
 ## Next task and acceptance
