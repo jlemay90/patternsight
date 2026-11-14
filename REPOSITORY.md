@@ -50,3 +50,6 @@ not use GitHub according to the owner. These are unverified handoff claims,
 not source that can be recreated from the message. Preserve and import Claude's
 actual source/Git bundle when supplied, then compare ancestry and changes before
 continuing its live evaluation. Do not label the agent-01 foundation as agent 02.
+## v0.2.0 evaluation & GitHub-first continuity
+
+Branch `agent/04-eval-and-github-continuity` is published on GitHub with the 8-fixture `scripts/eval_reflection.py` harness and the v2 GitHub-first `app-continuity` workflow (`skills/app-continuity/SKILL.md`).
